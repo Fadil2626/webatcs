@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATCS Sumedang Live Streaming</title>
+    <link rel="stylesheet" href="tess.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="https://atcs.sumedangkab.go.id/assets/images/insunmedal2-min.png" alt="Dinas Logo">
+                <img src="https://seeklogo.com/images/D/dishub-logo-8BBAFD2277-seeklogo.com.png" alt="Dishub Logo">
+            </div>
+            <h1>ATCS Dinas Perhubungan Kab.Sumedang</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stream">Live</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <section class="welcome">
+                <h2>Welcome to ATCS Sumedang</h2>
+                <p>Experience live streaming of events from Sumedang. Stay updated and connected with us.</p>
+            </section>
+        </section>
+        <section id="stream">
+            <section class="live-stream">
+                <h2>Live Stream ATCS Kab.Sumedang</h2>
+                <div class="streams">
+                    <div class="stream">
+                        <video id="video1" controls autoplay></video>
+                        <button>Kantor Dishub Sumedang</button>
+                    </div>
+                    <div class="stream">
+                        <video id="video2" controls autoplay></video>
+                        <button>Live Stream 2</button>
+                    </div>
+                    <div class="stream">
+                        <video id="video3" controls autoplay></video>
+                        <button>Live Stream 3</button>
+                    </div>
+                    <div class="stream">
+                        <video id="video4" controls autoplay></video>
+                        <button>Live Stream 4</button>
+                    </div>
+                    <div class="stream">
+                        <video id="video5" controls autoplay></video>
+                        <button>Live Stream 5</button>
+                    </div>
+                    <div class="stream">
+                        <video id="video6" controls autoplay></video>
+                        <button>Live Stream 6</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        var video1 = document.getElementById('video1');
+        var videoSrc1 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/gk5Lo9izdg/s.m3u8';
+
+        if (Hls.isSupported()) {
+            var hls1 = new Hls();
+            hls1.loadSource(videoSrc1);
+            hls1.attachMedia(video1);
+            hls1.on(Hls.Events.MANIFEST_PARSED, function() {
+                video1.play();
+            });
+        } else if (video1.canPlayType('application/vnd.apple.mpegurl')) {
+            video1.src = videoSrc1;
+            video1.addEventListener('loadedmetadata', function() {
+                video1.play();
+            });
+        }
+
+        var video2 = document.getElementById('video2');
+        var videoSrc2 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/AnenNAeJvm/s.m3u8';
+
+        if (Hls.isSupported()) {
+            var hls2 = new Hls();
+            hls2.loadSource(videoSrc2);
+            hls2.attachMedia(video2);
+            hls2.on(Hls.Events.MANIFEST_PARSED, function() {
+                video2.play();
+            });
+        } else if (video2.canPlayType('application/vnd.apple.mpegurl')) {
+            video2.src = videoSrc2;
+            video2.addEventListener('loadedmetadata', function() {
+                video2.play();
+            });
+        }
+        
+        var video3 = document.getElementById('video3');
+        var videoSrc3 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/0j7lrn9dje/s.m3u8 ';
+
+        if (Hls.isSupported()) {
+            var hls3 = new Hls();
+            hls3.loadSource(videoSrc3);
+            hls3.attachMedia(video3);
+            hls3.on(Hls.Events.MANIFEST_PARSED, function() {
+                video3.play();
+            });
+        } else if (video3.canPlayType('application/vnd.apple.mpegurl')) {
+            video3.src = videoSrc3;
+            video3.addEventListener('loadedmetadata', function() {
+                video3.play();
+            });
+        }
+
+        var video4 = document.getElementById('video4');
+        var videoSrc4 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/Gcga8Gq1Bg/s.m3u8';
+
+        if (Hls.isSupported()) {
+            var hls4 = new Hls();
+            hls4.loadSource(videoSrc4);
+            hls4.attachMedia(video4);
+            hls4.on(Hls.Events.MANIFEST_PARSED, function() {
+                video4.play();
+            });
+        } else if (video4.canPlayType('application/vnd.apple.mpegurl')) {
+            video4.src = videoSrc3;
+            video4.addEventListener('loadedmetadata', function() {
+                video4.play();
+            });
+        }
+        var video5 = document.getElementById('video5');
+        var videoSrc5 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/Y2JdzS2W4t/s.m3u8';
+
+        if (Hls.isSupported()) {
+            var hls5 = new Hls();
+            hls5.loadSource(videoSrc5);
+            hls5.attachMedia(video5);
+            hls5.on(Hls.Events.MANIFEST_PARSED, function() {
+                video5.play();
+            });
+        } else if (video5.canPlayType('application/vnd.apple.mpegurl')) {
+            video5.src = videoSrc5;
+            video5.addEventListener('loadedmetadata', function() {
+                video5.play();
+            });
+        }
+        var video6 = document.getElementById('video6');
+        var videoSrc6 = 'https://atcs.sumedangkab.go.id/video/lKaKTqOjXLc1NAgDUqhqEBhFV4n8bh/hls/fMXW29kaZd/23YtWcxa5H/s.m3u8';
+
+        if (Hls.isSupported()) {
+            var hls6 = new Hls();
+            hls6.loadSource(videoSrc6);
+            hls6.attachMedia(video6);
+            hls6.on(Hls.Events.MANIFEST_PARSED, function() {
+                video6.play();
+            });
+        } else if (video6.canPlayType('application/vnd.apple.mpegurl')) {
+            video6.src = videoSrc6;
+            video6.addEventListener('loadedmetadata', function() {
+                video6.play();
+            });
+        }
+    </script>
+    <section id="contact">
+        <!-- Bagian Selamat Datang dan Live Stream Anda yang sudah ada -->
+    
+        <!-- Bagian Tentang -->
+        <section class="about">
+            <h2>About</h2>
+            <p>ATCS Sumedang provides a platform for live streaming events happening in Sumedang. Our goal is to keep you informed and engaged with real-time updates.</p>
+        </section>
+    
+        <!-- Bagian Kontak -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? Get in touch with us!</p>
+            <p>Email: <a href="mailto:info@atcs-sumedang.com">info@atcs-sumedang.com</a></p>
+            <p>Phone: <a href="tel:085559270774">85559270774</a></p>
+            <p>Address: 123 Sumedang Street, Sumedang City, Country</p>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dishub Kab.Sumedang. All Rights Reserved.</p>
+        <p>M. Fadillah Nur Arief</p>
+    </footer>
+</body>
+</html>
